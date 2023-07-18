@@ -10,12 +10,15 @@ import NotFound from "../pages/NotFound";
 export default function RouteList(): ReactElement {
 
     return (
-        <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/projects" element={<Projects />}></Route>
-            <Route path="/info" element={<Info />}></Route>
-            <Route path="*" element={<NotFound />}></Route>
-        </Routes>
+        <div className="main">
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route path="/about" element={<About />}></Route>
+                <Route path="/projects" element={<Projects />}></Route>
+                <Route path="/info" element={<Info />}></Route>
+                <Route path="*" element={<NotFound />}></Route>
+            </Routes>
+        </div>
+
     );
 }
